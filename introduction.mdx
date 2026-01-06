@@ -1,0 +1,100 @@
+---
+title: Introduction to Ramayanam.ai
+description: Discover how Ramayanam.ai blends ancient Indian epic wisdom with modern AI to create interactive digital experiences.
+---
+
+## Overview
+
+Ramayanam.ai reimagines the timeless Indian epic, Ramayana, through artificial intelligence. You engage with digital avatars of iconic characters like Lord Rama and Sita, explore interactive episodes, reels, and stories, and participate in AI-powered conversations that reveal profound values such as dharma, devotion, and righteousness. This platform bridges ancient wisdom with modern technology, making the epic accessible and immersive for everyone.
+
+## Key Features
+
+Discover the core capabilities that make Ramayanam.ai unique.
+
+<Columns cols={3}>
+  <Card title="Digital Avatars" icon="user" href="/features/avatars">
+    Interact with lifelike AI avatars of Ramayana characters. Ask questions and receive responses rooted in the epic's teachings.
+  </Card>
+  <Card title="AI Conversations" icon="message-circle" href="/features/conversations">
+    Dive into dynamic dialogues. Explore moral dilemmas, character backstories, and philosophical insights through natural language.
+  </Card>
+  <Card title="Interactive Content" icon="play-circle" href="/features/content">
+    Enjoy episodes, short reels, and branching stories. Experience the Ramayana narrative in bite-sized, engaging formats.
+  </Card>
+</Columns>
+
+## Benefits of Engaging with Ramayanam.ai
+
+You gain more than entertainment—you connect with enduring values like loyalty, courage, and ethical living. The platform fosters mindfulness and cultural appreciation in a tech-driven world. AI personalization tailors experiences to your interests, whether you're a student, devotee, or curious learner.
+
+<Callout kind="tip">
+  Start with short reels for quick inspiration, then deepen your journey through full conversations.
+</Callout>
+
+## Quick Start
+
+Get up and running in minutes.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+    Visit [https://ramayanam.ai](https://ramayanam.ai) and create a free account using your email.
+  </Step>
+  <Step title="Explore Episodes" icon="video">
+    Browse the library and select an episode, such as Rama's exile.
+  </Step>
+  <Step title="Interact with Avatars" icon="message-circle">
+    Chat with characters. Try asking: "What is the importance of dharma?"
+  </Step>
+  <Step title="Create Your Story" icon="edit-3">
+    Use the story builder to craft personalized Ramayana adventures.
+  </Step>
+</Steps>
+
+## Embed Ramayanam.ai Conversations
+
+Integrate AI chats into your website or app.
+
+<CodeGroup tabs="JavaScript,Python">
+  ```javascript
+  const response = await fetch('https://api.ramayanam.ai/v1/chat', {
+    method: 'POST',
+    headers: { 'Authorization': 'Bearer YOUR_API_KEY', 'Content-Type': 'application/json' },
+    body: JSON.stringify({ message: 'Tell me about Hanuman', character: 'hanuman' })
+  });
+  const data = await response.json();
+  console.log(data.reply);
+  ```
+  ```python
+  import requests
+
+  response = requests.post(
+      'https://api.ramayanam.ai/v1/chat',
+      headers={'Authorization': 'Bearer YOUR_API_KEY', 'Content-Type': 'application/json'},
+      json={'message': 'Tell me about Hanuman', 'character': 'hanuman'}
+  )
+  print(response.json()['reply'])
+  ```
+</CodeGroup>
+
+## Next Steps
+
+<Columns cols={2}>
+  <Card title="Quickstart Guide" icon="zap" href="/quickstart">
+    Build your first interaction in under 5 minutes.
+  </Card>
+  <Card title="Authentication" icon="shield" href="/authentication">
+    Secure your API access and manage keys.
+  </Card>
+</Columns>
+
+<Expandable title="Deeper Dive into Ramayana Values" default-open="false">
+
+Ramayanam.ai emphasizes key principles:
+
+- **Dharma**: Righteous path in all actions
+- **Bhakti**: Devotion and surrender
+- **Karma**: Actions and their consequences
+
+These themes appear dynamically in every conversation.
+
+</Expandable>
